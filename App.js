@@ -1,125 +1,54 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-
 import React from 'react';
-import type {Node} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,Dimensions
-} from 'react-native';
+import {Text} from 'react-native'
+import {NavigationContainer} from '@react-navigation/native';
+import {extendTheme, NativeBaseProvider} from 'native-base';
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+// import Home from './src/screens/Home';
+import {Provider} from 'react-redux';
+import {store, persistor} from './src/store';
+import {PersistGate} from 'redux-persist/integration/react';
+// import {View, ActivityIndicator} from 'react-native';
+// import {TabBar} from './src/navigations/tabNavigator';
+// import ChatDemo from './src/demos';
+ import RouteComponent from './src/navigations';
+ const colorTheme = extendTheme({
+  colors: {
+    // Add new color
+    primary: {
+      50: '#f5f3ff',
+      100: '#ede9fe',
+      200: '#ddd6fe',
+      300: '#c4b5fd',
+      400: '#a78bfa',
+      500: '#8b5cf6',
+      600: '#7c3aed',
+      700: '#6d28d9',
+      800: '#5b21b6',
+      900: '#4c1d95',
+    },
 
-const Section = ({children, title}): Node => {
-  const isDarkMode = useColorScheme() === 'dark';
-  return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
-    </View>
-  );
-};
-
-const App: () => Node = () => {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-    flex:1
-
-  };
-  const  height  = Dimensions.get('window').height;
-  const  width  = Dimensions.get('window').width;
-
-
-  return (
-    <SafeAreaView style={{flex:1}}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <ScrollView
-        contentInsetAdjustmentBehavior='automatic'
-        contentContainerStyle={backgroundStyle}>
-        <Header />
-        <View
-          style={{
-           backgroundColor:'#c0c0c0',
-            // backgroundColor: isDarkMode ? Colors.black : Colors.white,
-            position:'absolute',
-            bottom:60,
-            right:50,
-            // top:height/2,
-            // left:width/2 - 100,
-            
-          }}>
-          {/* <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.js</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks /> */}
-          <Text>{height}{width}</Text>
-        </View>
-      </ScrollView>
-    </SafeAreaView>
-  );
-};
-
-const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
+    // Redefinig only one shade, rest of the color will remain same.
+    amber: {
+      400: '#d97706',
+    },
   },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
+  config: {
+    // Changing initialColorMode to 'dark'
+    initialColorMode: 'dark',
   },
 });
+const App = () => {
+
+  return (
+    <Provider store={store}>
+      <PersistGate persistor={persistor}>
+        <NativeBaseProvider theme={colorTheme}>
+          <RouteComponent /> 
+        </NativeBaseProvider>
+      </PersistGate>
+    </Provider>
+   
+  );
+};
 
 export default App;
