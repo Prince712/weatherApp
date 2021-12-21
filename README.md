@@ -1,6 +1,7 @@
 # weatherApp
-use npm intall
-then npm run ios
+clone repo and
+use npm install
+then npm run ios 
 <br/>
 <b>Android  :</b> 
 <br/>
