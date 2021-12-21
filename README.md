@@ -14,7 +14,7 @@ then npm run ios
 <b>IOS :</b> 
 IOS
 <br/>
-
+<br/>
 <img src="https://user-images.githubusercontent.com/36260086/146885099-6ebc5940-adab-4979-a295-d9dff7d8219a.png" width="250">
 <img src="https://user-images.githubusercontent.com/36260086/146885129-1945c8e7-8616-4794-83fd-043df4fd4373.png" width="250">
 <img src="https://user-images.githubusercontent.com/36260086/146885163-744e1d70-5b2c-49bc-b004-85c8490d20d8.png" width="250">
