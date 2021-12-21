@@ -98,11 +98,7 @@ export default function Register({navigation}) {
       email,
       password,      
     }
-    RegisterUser(params).then(res =>{
-
-    }).catch(e => {
-      console.log('error',e)
-    });
+    RegisterUser(params);
     console.log('register');
 
   };

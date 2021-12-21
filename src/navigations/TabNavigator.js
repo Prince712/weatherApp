@@ -3,6 +3,7 @@ import Home from '../screens/Home';
 import Profile from '../screens/Profile';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import Map from '../screens/Map';
 
 const Tab = createBottomTabNavigator();
 
@@ -16,8 +17,8 @@ export default function TabNavigator() {
 
           if (route.name === 'Home') {
             iconName = focused ? 'ios-home' : 'ios-home-outline';
-          } else if (route.name === 'Favourite') {
-            iconName = focused ? 'ios-heart-sharp' : 'ios-heart-outline';
+          } else if (route.name === 'Map') {
+            iconName = focused ? 'map' : 'map-outline';
           } else if (route.name === 'Profile') {
             iconName = focused
               ? 'person-circle-sharp'
@@ -28,10 +29,11 @@ export default function TabNavigator() {
         },
         tabBarActiveTintColor: '#4c1d95',
         tabBarInactiveTintColor: 'gray',
-        // headerShown: false,
+        // headerShown: false,.
         // headerMode: 'screen'
       })}>
       <Tab.Screen name="Home" component={Home} options={{headerTitle:'Home',headerTitleAlign:'left'}}  />
+      <Tab.Screen name="Map" component={Map} options={{headerTitle:'Map',headerTitleAlign:'left'}}  />
       <Tab.Screen name="Profile" component={Profile} options={{headerTitle:'Profile',headerTitleAlign:'left'}} />
     </Tab.Navigator>
   );
