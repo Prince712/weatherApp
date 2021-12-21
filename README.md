@@ -2,12 +2,13 @@
 use npm intall
 then npm run ios
 Android
-<img src="https://user-images.githubusercontent.com/36260086/146884897-1c2f628c-a4b8-473c-966c-33c97296d080.jpg" width="200">
-![Screenshot_2021-12-21-12-09-58-951_com demotask](https://user-images.githubusercontent.com/36260086/146884897-1c2f628c-a4b8-473c-966c-33c97296d080.jpg)
-![Screenshot_2021-12-21-12-10-07-331_com demotask](https://user-images.githubusercontent.com/36260086/146884926-a9ecdc8c-ccca-4948-8fb2-2a4be35fbae3.jpg)
-![Screenshot_2021-12-21-12-09-46-126_com demotask](https://user-images.githubusercontent.com/36260086/146884943-b96e5dc4-38f4-423b-aa62-a0e36b425a76.jpg)
-![Screenshot_2021-12-21-12-09-48-790_com demotask](https://user-images.githubusercontent.com/36260086/146884952-c3c4b821-13b0-4e33-9728-5c02be8aeb2c.jpg)
-![Screenshot_2021-12-21-12-09-51-147_com demotask](https://user-images.githubusercontent.com/36260086/146884971-3eeabdcb-cf36-467a-9bc7-3e7d8f6472ca.jpg)
+<br/>
+<img src="https://user-images.githubusercontent.com/36260086/146884897-1c2f628c-a4b8-473c-966c-33c97296d080.jpg" width="250">
+<img src="https://user-images.githubusercontent.com/36260086/146884926-a9ecdc8c-ccca-4948-8fb2-2a4be35fbae3.jpg" width="250">
+<img src="https://user-images.githubusercontent.com/36260086/146884943-b96e5dc4-38f4-423b-aa62-a0e36b425a76.jpg" width="250">
+<img src="https://user-images.githubusercontent.com/36260086/146884952-c3c4b821-13b0-4e33-9728-5c02be8aeb2c.jpg" width="250">
+<img src="https://user-images.githubusercontent.com/36260086/146884971-3eeabdcb-cf36-467a-9bc7-3e7d8f6472ca.jpg" width="250">
+
 
 IOS
 
