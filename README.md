@@ -5,11 +5,11 @@ then npm run ios
 <br/>
 <b>Android  :</b> 
 <br/>
-<img src="https://user-images.githubusercontent.com/36260086/146884897-1c2f628c-a4b8-473c-966c-33c97296d080.jpg" width="150" height="200">
-<img src="https://user-images.githubusercontent.com/36260086/146884926-a9ecdc8c-ccca-4948-8fb2-2a4be35fbae3.jpg" width="150" height="200">
-<img src="https://user-images.githubusercontent.com/36260086/146884943-b96e5dc4-38f4-423b-aa62-a0e36b425a76.jpg" width="150" height="200">
-<img src="https://user-images.githubusercontent.com/36260086/146884952-c3c4b821-13b0-4e33-9728-5c02be8aeb2c.jpg" width="150" height="200">
-<img src="https://user-images.githubusercontent.com/36260086/146884971-3eeabdcb-cf36-467a-9bc7-3e7d8f6472ca.jpg" width="150" height="200">
+<img src="https://user-images.githubusercontent.com/36260086/146884897-1c2f628c-a4b8-473c-966c-33c97296d080.jpg" width="250">
+<img src="https://user-images.githubusercontent.com/36260086/146884926-a9ecdc8c-ccca-4948-8fb2-2a4be35fbae3.jpg" width="250">
+<img src="https://user-images.githubusercontent.com/36260086/146884943-b96e5dc4-38f4-423b-aa62-a0e36b425a76.jpg" width="250">
+<img src="https://user-images.githubusercontent.com/36260086/146884952-c3c4b821-13b0-4e33-9728-5c02be8aeb2c.jpg" width="250">
+<img src="https://user-images.githubusercontent.com/36260086/146884971-3eeabdcb-cf36-467a-9bc7-3e7d8f6472ca.jpg" width="250">
 
 <br/>
 <b>IOS :</b> 
