@@ -6,7 +6,6 @@ import {
   RefreshControl,
   StyleSheet,
   StatusBar,
-  LinearGradient,
 } from 'react-native';
 import { useWeather } from '../../hooks/useWeather';
 import { useColorScheme } from '../../hooks/useColorScheme';
